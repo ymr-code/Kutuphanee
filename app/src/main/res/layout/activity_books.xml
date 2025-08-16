@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/bookFormButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4C6A24"
+            android:text="Yeni Kitap +"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/filterButton"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_filter"
+            android:contentDescription="Filtre"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <!-- Kitap Listesi -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"/>
+</LinearLayout>
