@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EEEEEE"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kitap Başlığı"
+            android:inputType="textPersonName"
+            android:textColor="#4F4F4F"/>
+
+        <EditText
+            android:id="@+id/authorInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Yazar"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp"
+            android:textColor="#4F4F4F"/>
+
+
+        <Spinner
+            android:id="@+id/genreSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ekle"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#4C6A24"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"/>
+</LinearLayout>
